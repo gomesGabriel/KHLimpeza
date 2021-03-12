@@ -1,0 +1,74 @@
+
+Relação Pedido - Funcionário
+	Cód. Relação
+	Cód. Funcionário(FK)
+	Cód. Pedido(FK)
+	Dt. Execução(Vem do pedido)
+	Hora inicial serviço (Vem do pedido)
+	Hora final serviço(Vem do pedido)
+
+Cadastro de funcionários
+	Cód. Funcionário
+	Nome 
+	Telefone
+	Dt. Nascimento
+	Email
+	CPF
+	
+Cadastro de Habilitação
+	Cód. Habilitação
+	Descrição
+	Duração 
+	
+Relação Funcionário-Habilitação
+	Cód. Relação
+	Cód. Funcionário(FK)
+	Cód. Habilitação(FK)
+	
+Cadastro de clientes
+	Cód. Cliente
+	CPF_CGC
+	Razão Social/Nome
+	Endereço
+	Telefone
+	Tipo Pessoa
+	
+Cadastro de Serviços
+	Cód. Serviço
+	Descrição
+	Tempo por m2
+
+Pedidos de serviço
+	Cód. Pedido
+	Cód. Cliente(FK)
+	(Dados da ficha do cliente)
+	Dt. Negociação
+	Dt. Execução
+	Local do serviço
+	Valor total
+	Hora Inicial do serviço
+	Duração máxima para os serviços
+
+Itens do pedido de servico
+	Cód. Item/sequência
+	Cód. Pedido(FK)
+	Cód. Serviço(FK)
+	(Dados da ficha de serviço)
+	Metragem(m2)
+	Valor do Serviço
+
+NF Serviço
+
+
+
+
+Relatório de pedidos com alocação incompleta -> caso a soma da quantidade total de serviços não seja igual a soma da relação de funcionários-pedidos deve-se apresentar este registro no relatório
+	Campos do relatório
+		Cód. Cliente
+		Razão Social/Nome
+		Data da Realização
+		Serviços a serem executados por orçamento
+		Metragem(m2) por item
+	
+
+
